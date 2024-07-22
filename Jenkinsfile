@@ -12,6 +12,7 @@ pipeline {
     	dependencyCheck additionalArguments: '''
                 	-o './'
                 	-s './'
+		 	-n './'
                 	-f 'ALL'
                 	--prettyPrint''', odcInstallation: 'OWASP Dependency-Check Vulnerabilities'
    	 
